@@ -1,5 +1,7 @@
 # iOS-deploy
 
+## Usage
+
 ```
 $> ./deploy.py --help                                                                                                                                                                                     11:59:38
 usage: deploy.py [-h] -w WORKSPACE [-s SCHEME] [-t HOCKEY_API_TOKEN] [-a] [-i]
@@ -23,6 +25,7 @@ optional arguments:
   -v, --verbose         Specify to log the xcodebuild
 ```
 
+## Example
 
 The following example will list the schemes for the current workspace, increment the build number, run pod install, deploy the app to hockey and git push to the current branch.
 ```
@@ -31,3 +34,6 @@ The following example will list the schemes for the current workspace, increment
 
 Without the parameter `-t/--hockey_api_token` and a valid token no push to Hockey will occur.
 The archives will be created in the same folder as the workspace.
+
+### TODO
+- git branch name as parameter
